@@ -10,3 +10,5 @@ RUN apt install git -y
 WORKDIR /opt/build
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git .
 RUN mvn clean package
+
+CMD ["/bin/bash"]
